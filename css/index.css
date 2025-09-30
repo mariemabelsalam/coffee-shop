@@ -1,0 +1,183 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 1rem;
+    list-style: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+:root {
+    --main-color: #B28B61;
+}
+
+header {
+    background-image: url(../images/bg.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+header .content {
+    color: var(--main-color);
+}
+
+button {
+    background-color: var(--main-color);
+    border: 1px solid transparent;
+    transition: all .3s;
+}
+
+button:hover {
+    background-color: #8a6f49;
+
+}
+
+header .navbar .navbar-nav a {
+    transition: all .3s;
+}
+
+header .navbar .navbar-nav a:hover {
+    background-color: var(--main-color);
+    border: 1px solid transparent;
+    border-radius: 1px;
+}
+
+header .navbar .icons i {
+    color: white;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+header .navbar .icons i:hover {
+    color: var(--main-color);
+}
+
+header input {
+    border: none;
+    outline: none;
+    color: var(--main-color);
+}
+
+.search-box {
+    top: -100%;
+    transition: all 1s;
+}
+
+.search-box.appear {
+    top: 110%;
+}
+
+.product .card-body p {
+    background-color: var(--main-color);
+    transition: all .6s;
+}
+
+.product .card-body p:hover {
+    background-color: #8a6f49;
+}
+
+.customer img {
+    width: 100px;
+    height: 100px;
+}
+
+.customer .card:hover {
+    background-color: white;
+    transition: all .5s;
+}
+
+.customer .card:hover {
+    background-color: #EEEAE1;
+}
+
+footer input::placeholder {
+    color: white;
+}
+
+footer {
+    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(../images/footer-bg.jpg);
+
+    background-position: center;
+    background-size: cover;
+}
+
+footer input {
+    width: 25%;
+}
+
+footer button {
+    right: 34%;
+    transform: translateX(-50%);
+}
+
+footer i {
+    transition: all .4s;
+}
+
+footer i:hover {
+    color: #8a6f49 !important;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer li a:hover {
+    background-color: rgba(0, 0, 0, .9);
+    padding: 8px;
+}
+
+.quetions i {
+    cursor: pointer;
+    background-color: #FA740B;
+}
+
+.section-four {
+    background-color: #392513;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.none {
+    display: none;
+}
+
+@media(max-width: 800px) {
+
+    h1,
+    p {
+        margin: 10px;
+    }
+
+    nav {
+        position: static !important;
+    }
+
+    .search-box.appear {
+        top: 100%;
+    }
+
+    header .section-one {
+        margin-top: 35px;
+    }
+
+    footer input {
+        width: 75%;
+    }
+
+    footer button {
+        right: 5%;
+    }
+
+}
